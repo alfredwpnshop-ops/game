@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Scroll Action Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-wrapper">
+      <section class="hud">
+        <h1>シンプル横スクロールアクション</h1>
+        <p>スペースキー / 上矢印、または画面タップでジャンプ。Rキーでリスタート。</p>
+        <p class="status" id="statusText">残り時間: 60.0s</p>
+      </section>
+      <canvas id="gameCanvas" width="960" height="420" aria-label="横スクロールアクションゲームキャンバス"></canvas>
+      <footer class="instructions">
+        <p>画像は <code>assets/character.png</code> と <code>assets/obstacle.png</code> を差し替えて使用してください。</p>
+      </footer>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
