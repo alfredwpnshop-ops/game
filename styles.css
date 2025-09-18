@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  background: linear-gradient(180deg, #13293d 0%, #18435a 35%, #0b1c2c 100%);
+  color: #f7fbff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 32px 12px;
+}
+
+.game-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hud h1 {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+}
+
+.hud p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.status {
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+#gameCanvas {
+  width: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  background: linear-gradient(180deg, #4cc9f0 0%, #4895ef 40%, #4d908e 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.instructions {
+  font-size: 0.9rem;
+  color: rgba(240, 248, 255, 0.85);
+}
+
+.instructions code {
+  color: #ffe066;
+}
